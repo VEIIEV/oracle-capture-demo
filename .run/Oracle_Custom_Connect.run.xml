@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Oracle Custom Connect (IDEA only)" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="lab.MainApplication" />
+    <module name="oracle-connect-source" />
+    <option name="VM_PARAMETERS" value="-Duser.timezone=UTC" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/custom" />
+    <method v="2"><option name="Make" enabled="true" /></method>
+  </configuration>
+</component>

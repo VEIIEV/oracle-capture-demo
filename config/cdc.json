@@ -1,0 +1,21 @@
+{
+  "connector.class": "io.debezium.connector.oracle.OracleConnector",
+  "tasks.max": "1",
+  "database.hostname": "oracle",
+  "database.port": "1521",
+  "database.user": "C##DBZUSER",
+  "database.password": "dbz",
+  "database.dbname": "XE",
+  "database.pdb.name": "XEPDB1",
+  "database.connection.adapter": "logminer",
+  "topic.prefix": "cdc",
+  "schema.include.list": "APP",
+  "table.include.list": "APP.ORDERS",
+  "snapshot.mode": "initial",
+  "log.mining.strategy": "online_catalog",
+  "schema.history.internal.kafka.bootstrap.servers": "kafka:29092",
+  "schema.history.internal.kafka.topic": "cdc-schema-history",
+  "schema.history.internal.store.only.captured.tables.ddl": "true",
+  "decimal.handling.mode": "string",
+  "tombstones.on.delete": "true"
+}

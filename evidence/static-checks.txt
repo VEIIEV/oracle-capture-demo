@@ -1,0 +1,1 @@
+PASS: Compose, JSON/XML, 36 command blocks, SQL paths/error exits, internal links, no .sh files, separate Oracle readers

@@ -1,0 +1,22 @@
+{
+  "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+  "tasks.max": "1",
+  "connection.url": "jdbc:oracle:thin:@//oracle:1521/XEPDB1",
+  "connection.user": "KAFKA_JDBC",
+  "connection.password": "jdbc_reader",
+  "schema.pattern": "APP",
+  "table.whitelist": "ORDERS",
+  "table.types": "TABLE",
+  "mode": "timestamp+incrementing",
+  "timestamp.column.name": "UPDATED_AT",
+  "incrementing.column.name": "ID",
+  "topic.prefix": "jdbc.",
+  "poll.interval.ms": "1000",
+  "timestamp.delay.interval.ms": "5000",
+  "batch.max.rows": "2",
+  "db.timezone": "UTC",
+  "numeric.mapping": "best_fit",
+  "transforms": "key",
+  "transforms.key.type": "org.apache.kafka.connect.transforms.ValueToKey",
+  "transforms.key.fields": "ID"
+}
